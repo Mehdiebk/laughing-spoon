@@ -95,46 +95,6 @@
         .sign-up-link:hover {
             text-decoration: underline;
         }
-
-        .buttons-container {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            margin-top: 1rem;
-        }
-
-        .social-login-button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0.75rem;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: box-shadow 0.3s;
-            box-sizing: border-box;
-        }
-
-        .social-login-button svg {
-            margin-right: 0.5rem;
-        }
-
-        .apple-login-button {
-            background-color: #000000;
-            color: #ffffff;
-            border: none;
-        }
-
-        .google-login-button {
-            background-color: #ffffff;
-            color: #444444;
-            border: 1px solid #cccccc;
-        }
-
-        .apple-login-button:hover,
-        .google-login-button:hover {
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        }
     </style>
 </head>
 <body>
@@ -149,9 +109,9 @@
             </div>
             <button type="submit" class="form-btn">Se connecter</button>
         </form>
-       
-        
-        </div>
+        <p class="sign-up-label">
+            Vous n'avez pas de compte ? <a href="{{ route('register') }}" class="sign-up-link">S'inscrire</a>
+        </p>
     </div>
 </body>
 </html>
